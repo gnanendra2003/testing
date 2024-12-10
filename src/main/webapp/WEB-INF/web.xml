@@ -1,0 +1,27 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>FindProductByCategory</servlet-name>
+  	<display-name>FindProductByCategory</display-name>
+  	<description></description>
+  	<servlet-class>com.gnana.product.FindProductByCategory</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DisplayAllProducts</servlet-name>
+  	<display-name>DisplayAllProducts</display-name>
+  	<description></description>
+  	<servlet-class>com.gnana.product.DisplayAllProducts</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FindProductByCategory</servlet-name>
+  	<url-pattern>/find-product-by-category</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DisplayAllProducts</servlet-name>
+  	<url-pattern>/display-all-products</url-pattern>
+  </servlet-mapping>
+</web-app>
